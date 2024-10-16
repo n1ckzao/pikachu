@@ -16,24 +16,24 @@ body{
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
-    padding-inline: 64px;
+    padding-inline: 12vh;
     font-family: "Jersey 10", sans-serif;
 }
 header{
-    height: 100px;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
 }
 header div{
     display: flex;
-    gap: 48px;
+    gap: 5vh;
 }
 header a{
     display: flex;
     align-items: center;
     height: 100%;
-    gap: 16px;
-    font-size: 24px;
+    gap: 1vh;
+    font-size: 1.6vh;
     color: var(--secondary-color);
 }
 main{
@@ -48,17 +48,18 @@ main{
     position: relative;
 }
 .title h1{
-    font-size: 24vw;
+    font-size: 18vw;
 }
 .title span{
     position: absolute;
-    font-size: 28vw;
+    font-size: 22vw;
     left: 0;
-    top: -50%;
+    top: -45%;
     opacity: 0.3;
 }
 .container{
     display: flex;
+    height: 20%;
 }
 .description{
     width: 50%;
@@ -66,11 +67,11 @@ main{
     z-index: 1;
 }
 .description h2{
-    font-size: 164px;
+    font-size: 11vh;
 }
 .description p{
-    font-size: 40px;
-    width: 800px;
+    font-size: 3vh;
+    width: 65vh;
 }
 .action{
     width: 50%;
@@ -80,22 +81,22 @@ main{
 }
 .action a{
     background-color: var(--secondary-color);
-    height: 100px;
-    width: 400px;
+    height: 7vh;
+    width: 27vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 72px;
+    font-size: 6vh;
 }
 footer{
-    height: 50px;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--secondary-color);
     font-style: italic;
-    font-size: 35px;
+    font-size: 4vh;
 }
 .pikachu{
     position: absolute;
@@ -103,4 +104,77 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
     height: 65vh;
+}
+@media (max-width :960px) {
+    main{
+    justify-content: space-between;
+}
+.title span{
+    left: 50%;
+    transform: translateX(-50%);
+}
+    .container{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+    .container div{
+    width: 90%;
+}
+.container h2{
+    font-size: 8vh;
+}
+.container p{
+    font-size: 3vh;
+    width: 100%;
+}
+.description h2{
+    font-size: 7.7vh;
+}
+.description p{
+    font-size: 3vh;
+    width: 100%;
+}
+.action{
+    justify-content: center;
+}
+    footer{
+        display: none;
+    }
+    .pikachu{
+        height: 50vh;
+        left: 54%
+    }
+}
+@media (max-width: 640px) {
+    header div{
+        display: none;
+    }
+    .title{
+        top: 10%;
+    }
+    .container {
+        width: 100%;
+    }
+    .container p {
+        display: none;
+    }
+    .action{
+        width: 100%;
+    }
+    .container div{
+        width: 100%;
+    }
+    .container a{
+        font-size: 32px;
+        width: 100%;
+    }
+    .description h2{
+        font-size: 5vh;
+    }
+    .pikachu{
+        top: 50%;
+    }
+
 }

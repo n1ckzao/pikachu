@@ -6,7 +6,7 @@
 
 ---
 ### Sobre
-Site do tipo landing page para divulgar o jogo Let's Go Pikachu. O intuito desse projeto é colocar em prática o conhevimento adquirido sobre as linguagens de marcação: Html, Css e Markdown, no curso Técnico de Desenvolvimento de Sistemas do [SENAI JANDIRA](https://sp.senai.br/unidade/jandira/)
+Site do tipo landing page para divulgar o jogo Let's Go Pikachu. O intuito desse projeto é colocar em prática o conhecimento adquirido sobre as linguagens de marcação: Html, Css e Markdown, no curso Técnico de Desenvolvimento de Sistemas do [SENAI JANDIRA](https://sp.senai.br/unidade/jandira/)
 
 ---
 ## Tecnologias utilizadas
